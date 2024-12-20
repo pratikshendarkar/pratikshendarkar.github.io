@@ -5,70 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratik Shendarkar - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#summary">Summary</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <h1>Pratik P Shendarkar</h1>
-        <p>Data Science Professional | Machine Learning | Full-Stack Development</p>
+        <div class="hero-content">
+            <h1>Pratik P Shendarkar</h1>
+            <p>Data Scientist | Cloud Architect | Full-Stack Developer</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
     </header>
     <main>
-        <section id="summary">
+        <section id="summary" class="container">
             <h2>Summary</h2>
-            <p>Data Science professional with 3.7 years of experience in full-stack development, ETL frameworks, and data visualization...</p>
+            <p>Data Science professional with 3.7 years of experience in full-stack development, ETL frameworks, and data visualization techniques...</p>
         </section>
-        <section id="experience">
+        <section id="experience" class="container">
             <h2>Experience</h2>
-            <div>
-                <h3>ZS Associates - Business Technology Associate</h3>
-                <p><strong>Nov 2021 – July 2024</strong></p>
+            <div class="card">
+                <h3>ZS Associates</h3>
+                <p><i>Business Technology Associate</i> | Nov 2021 – July 2024</p>
                 <ul>
-                    <li>Designed ETL Framework and implemented data pipelines to process real-time data.</li>
-                    <li>Developed scalable data models using SQL and Pyspark, improving efficiency by 16%.</li>
+                    <li>Designed ETL Framework and implemented real-time data pipelines.</li>
+                    <li>Improved efficiency by 16% with scalable data models and dashboards.</li>
                 </ul>
             </div>
-            <div>
-                <h3>Cognizant Technology Solutions - Big Data Analyst</h3>
-                <p><strong>Jan 2021 – Oct 2021</strong></p>
+            <div class="card">
+                <h3>Cognizant Technology Solutions</h3>
+                <p><i>Big Data Analyst</i> | Jan 2021 – Oct 2021</p>
                 <ul>
-                    <li>Optimized workflows with AWS and Hadoop, reducing operational costs and improving speed by 12%.</li>
+                    <li>Streamlined workflows with AWS and Hadoop to reduce costs by 12%.</li>
                 </ul>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="container">
             <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Credit Limit Optimization</strong> - <a href="https://github.com/pratikshendarkar/Credit_Limit_Optimization" target="_blank">GitHub Link</a>
-                    <p>Created a reinforcement learning model to optimize credit limits...</p>
-                </li>
-                <li>
-                    <strong>Data Mining/Extraction Script</strong> - <a href="https://github.com/pratikshendarkar/Data-Extraction-Script" target="_blank">GitHub Link</a>
-                    <p>Developed a Python-based tool for extracting key information from resumes...</p>
-                </li>
-            </ul>
+            <div class="card">
+                <h3>Credit Limit Optimization</h3>
+                <p><a href="https://github.com/pratikshendarkar/Credit_Limit_Optimization" target="_blank">GitHub Link</a></p>
+                <p>Reinforcement learning model to optimize credit limits...</p>
+            </div>
+            <div class="card">
+                <h3>Data Mining/Extraction Script</h3>
+                <p><a href="https://github.com/pratikshendarkar/Data-Extraction-Script" target="_blank">GitHub Link</a></p>
+                <p>Python-based tool for resume parsing, automating data extraction...</p>
+            </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="container">
             <h2>Skills</h2>
             <ul>
-                <li>Machine Learning, NLP, CNN, Data Mining</li>
-                <li>Cloud Platforms: AWS (S3, EC2), Azure, GCP</li>
-                <li>Programming Languages: Python, SQL, R, Java, Scala</li>
+                <li>Machine Learning, NLP, Data Mining</li>
+                <li>Cloud Platforms: AWS, Azure, GCP</li>
+                <li>Languages: Python, SQL, Java</li>
             </ul>
         </section>
-        <section id="contact">
+        <section id="contact" class="container">
             <h2>Contact</h2>
-            <p>📞 732-925-7131</p>
-            <p>📧 <a href="mailto:pratikshendarkar5199@gmail.com">pratikshendarkar5199@gmail.com</a></p>
-            <p>💼 <a href="https://linkedin.com/in/pratik-shendarkar" target="_blank">LinkedIn</a></p>
+            <p><i class="fa fa-phone"></i> 732-925-7131</p>
+            <p><i class="fa fa-envelope"></i> <a href="mailto:pratikshendarkar5199@gmail.com">pratikshendarkar5199@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/pratik-shendarkar" target="_blank">LinkedIn</a></p>
         </section>
     </main>
     <footer>
@@ -76,4 +78,3 @@
     </footer>
 </body>
 </html>
-
