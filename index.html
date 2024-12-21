@@ -1,92 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratik Shendarkar - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <!-- Updated image path -->
-            <img src="images.jpg" alt="Pratik Shendarkar" class="profile-photo">
-            <h1>Pratik P Shendarkar</h1>
-            <p class="tagline">Data Scientist | Cloud Enthusiast | Innovator</p>
-            <p class="description">Empowering organizations with data-driven solutions. Experienced in Machine Learning, Big Data, and Visualization to transform data into actionable insights.</p>
-            <a href="#about" class="scroll-down">
-                <i class="fa fa-chevron-down"></i>
-            </a>
-        </div>
-    </header>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
 
-    <!-- About Section -->
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>I am a Data Science professional with 3.7 years of experience in full-stack development, ETL frameworks, and data visualization techniques. My expertise spans Machine Learning, Big Data, Statistical Modeling, and Cloud Technologies.</p>
-        <p>Thriving on transforming raw data into meaningful insights, I aim to leverage my skills to solve real-world problems and drive impactful decisions in diverse industries.</p>
-    </section>
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, #333, #444);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
 
-    <!-- Skills Section -->
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Data Science:</strong> Machine Learning, NLP, Data Mining</li>
-            <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
-            <li><strong>Programming Languages:</strong> Python, SQL, Java</li>
-            <li><strong>Tools:</strong> Power BI, Tableau, Snowflake</li>
-        </ul>
-    </section>
+.hero-content img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
 
-    <!-- Experience Section -->
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>ZS Associates</h3>
-            <p><i>Business Technology Associate</i> | Nov 2021 – July 2024</p>
-            <ul>
-                <li>Designed ETL frameworks and implemented real-time data pipelines.</li>
-                <li>Developed scalable data models, improving efficiency by 16%.</li>
-                <li>Built interactive dashboards using Power BI for supply chain management.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Cognizant Technology Solutions</h3>
-            <p><i>Big Data Analyst</i> | Jan 2021 – Oct 2021</p>
-            <ul>
-                <li>Optimized workflows using AWS and Hadoop to reduce operational costs.</li>
-                <li>Implemented Data Quality Frameworks, reducing errors by 16%.</li>
-            </ul>
-        </div>
-    </section>
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
 
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Credit Limit Optimization</h3>
-            <p><a href="https://github.com/pratikshendarkar/Credit_Limit_Optimization" target="_blank">GitHub Link</a></p>
-            <p>Developed a reinforcement learning model to optimize credit limits based on transactional history, leveraging Python, TensorFlow, and PostgreSQL.</p>
-        </div>
-        <div class="card">
-            <h3>Data Mining/Extraction Script</h3>
-            <p><a href="https://github.com/pratikshendarkar/Data-Extraction-Script" target="_blank">GitHub Link</a></p>
-            <p>Created a Python-based tool to parse resumes for key information using NLP libraries, improving processing efficiency by 24%.</p>
-        </div>
-    </section>
+.tagline {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
 
-    <!-- Contact Section -->
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p><i class="fa fa-phone"></i> 732-925-7131</p>
-        <p><i class="fa fa-envelope"></i> <a href="mailto:pratikshendarkar5199@gmail.com">pratikshendarkar5199@gmail.com</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/pratik-shendarkar" target="_blank">LinkedIn</a></p>
-    </section>
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+}
 
-    <footer>
-        <p>&copy; 2024 Pratik P Shendarkar</p>
-    </footer>
-</body>
-</html>
+.scroll-down:hover {
+    color: #4CAF50;
+}
+
+/* Other Sections */
+.container {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
